@@ -255,7 +255,7 @@ namespace JLE_XNA_TestGame
                 mBirdEnemy.decreaseXCoordinate(mBirdEnemy.getMoveLeft());
 
                 // If the player pushed down the 'Right' key on the keyboard then..
-                if (InpMa.keyboardButtonDown(Keys.Right))
+                if (InpMa.keyboardButtonDown(Keys.Right) || InpMa.gamePadDPadPressed(GamePad.GetState(PlayerIndex.One).DPad.Right) || InpMa.mouseScrollWheelValue() > 0)
                 {
                     // If the character hasn't reached the right border of the screen.
                     if (mScout.getXCoord() < (mTitleSafe.Width - mScout.ObjectTexture.Width / 2))
@@ -270,7 +270,7 @@ namespace JLE_XNA_TestGame
                 }
 
                 // If the player pushed down the 'Left' key on the keyboard then..
-                if (InpMa.keyboardButtonDown(Keys.Left))
+                if (InpMa.keyboardButtonDown(Keys.Left) || InpMa.gamePadDPadPressed(GamePad.GetState(PlayerIndex.One).DPad.Left) || InpMa.mouseScrollWheelValue() < 0)
                 {
                     // If the character hasn't reached the left border of the screen.
                     if (mScout.getXCoord() > 0)
