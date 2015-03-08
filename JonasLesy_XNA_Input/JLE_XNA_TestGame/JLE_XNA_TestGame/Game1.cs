@@ -269,21 +269,21 @@ namespace JLE_XNA_TestGame
                     }
                 }
 
-                if (InpMa.keyboardButtonDown(Keys.Up))
-                {
-                    if (mScout.getYCoord() > 0)
-                    {
-                        mScout.increaseYCoordinate(mScout.getMoveUp());
-                    }
-                }
+                //if (InpMa.keyboardButtonDown(Keys.Up))
+                //{
+                //    if (mScout.getYCoord() > 0)
+                //    {
+                //        mScout.increaseYCoordinate(mScout.getMoveUp());
+                //    }
+                //}
 
-                if (InpMa.keyboardButtonDown(Keys.Down))
-                {
-                    if (mScout.getYCoord() < (titleSafe.Height - mScout.ObjectTexture.Height))
-                    {
-                        mScout.decreaseYCoordinate(2);
-                    }
-                }
+                //if (InpMa.keyboardButtonDown(Keys.Down))
+                //{
+                //    if (mScout.getYCoord() < (titleSafe.Height - mScout.ObjectTexture.Height))
+                //    {
+                //        mScout.decreaseYCoordinate(2);
+                //    }
+                //}
 
                 if (InpMa.keyboardButtonPressed(Keys.Space) || InpMa.mouseButtonPressed(Mouse.GetState().LeftButton))
                 {
@@ -343,7 +343,7 @@ namespace JLE_XNA_TestGame
                 mSpriteBatch.Begin();
                 mSpriteBatch.DrawString(mTitleFont, "XNA SHOOTER", new Vector2(50, titleSafe.Height / 3), Color.Black);
                 mSpriteBatch.DrawString(mNormalFont, "Press ENTER to start playing!", new Vector2(titleSafe.Width / 2 - 200, titleSafe.Height / 2 + 40), Color.White);
-                mSpriteBatch.DrawString(mNormalFont, "Game controls:\n---------------\nLeft/Right/Jump: according keyboard buttons\nShoot: Space or Left-click\nReset: R-key\nQuit:  Escape-key", new Vector2(5, titleSafe.Height - 150), Color.Black);
+                mSpriteBatch.DrawString(mNormalFont, "Game controls:\n---------------\nLeft/Right: according keyboard buttons\nShoot: Space or Left-click\nReset: R-key\nQuit:  Escape-key", new Vector2(5, titleSafe.Height - 150), Color.Black);
                 mSpriteBatch.DrawString(mNormalFont, "By Jonas Lesy", new Vector2(titleSafe.Width - 150, titleSafe.Height - 30), Color.Black);
                 mSpriteBatch.End();
             }
