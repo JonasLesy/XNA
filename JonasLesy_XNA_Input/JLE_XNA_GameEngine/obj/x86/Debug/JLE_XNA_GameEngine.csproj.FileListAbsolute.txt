@@ -22,3 +22,9 @@ C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_GameEngine\obj\x86\Debu
 C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_GameEngine\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_GameEngine\obj\x86\Debug\JLE_XNA_GameEngine.dll
 C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_GameEngine\obj\x86\Debug\JLE_XNA_GameEngine.pdb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_GameEngine\bin\x86\Debug\JLE_XNA_GameEngine.dll
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_GameEngine\bin\x86\Debug\JLE_XNA_GameEngine.pdb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_GameEngine\obj\x86\Debug\JLE_XNA_GameEngine.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_GameEngine\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_GameEngine\obj\x86\Debug\JLE_XNA_GameEngine.dll
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_GameEngine\obj\x86\Debug\JLE_XNA_GameEngine.pdb

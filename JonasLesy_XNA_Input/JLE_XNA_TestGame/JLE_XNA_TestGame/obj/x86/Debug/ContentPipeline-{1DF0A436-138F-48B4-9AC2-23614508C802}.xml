@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\CharacterSprite.xnb</Output>
-      <Time>2015-03-04T10:53:03.8897129+02:00</Time>
+      <Time>2015-03-04T10:53:03+02:00</Time>
     </Item>
     <Item>
       <Source>Images\Bullet.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Bullet.xnb</Output>
-      <Time>2015-03-02T17:36:46.2672711+02:00</Time>
+      <Time>2015-03-02T17:36:46+02:00</Time>
     </Item>
     <Item>
       <Source>Images\birdEnemyLeft.png</Source>
@@ -53,16 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\birdEnemyLeft.xnb</Output>
-      <Time>2015-03-04T11:44:06.7428716+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\birdEnemyRight.png</Source>
-      <Name>Images\birdEnemyRight</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\birdEnemyRight.xnb</Output>
-      <Time>2015-03-04T13:03:36.7965793+02:00</Time>
+      <Time>2015-03-04T11:44:06+02:00</Time>
     </Item>
     <Item>
       <Source>NormalFont.spritefont</Source>
@@ -80,7 +71,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\TitleFont.xnb</Output>
-      <Time>2015-03-07T15:11:49.5731949+02:00</Time>
+      <Time>2015-03-07T15:11:49+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

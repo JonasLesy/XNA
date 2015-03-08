@@ -122,6 +122,7 @@ namespace JLE_XNA_TestGame
 
             // Load character texture and set its coordinates.
             mScout.setTexture(Content.Load<Texture2D>("Images/CharacterSprite"));
+            mScout.setDirectionRight(true);
             mScout.setYCoordinate(mScout.getYCoord());
             mScout.setXCoordinate(mScout.getXCoord());
 
@@ -305,7 +306,7 @@ namespace JLE_XNA_TestGame
                 //}
 
                 // If the player presses the 'Space' key on his keyboard or left-clicks with his mouse then..
-                if (InpMa.keyboardButtonPressed(Keys.Space) || InpMa.mouseButtonPressed(Mouse.GetState().LeftButton))
+                if (InpMa.keyboardButtonPressed(Keys.Space) || InpMa.mouseButtonPressed(Mouse.GetState().LeftButton) || InpMa.gamePadButtonPressed(GamePad.GetState(PlayerIndex.One).Buttons.A))
                 {
                     // If the bullet is not yet visible then.. (this makes only one bullet possible at a time!)
                     if (!mBullet.getVisible())

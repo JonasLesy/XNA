@@ -2,3 +2,4 @@ C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame
 C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGameContent\obj\x86\Debug\JLE_XNA_TestGameContent.contentprojResolveAssemblyReference.cache
 C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGameContent\obj\x86\Debug\JLE_XNA_TestGameContent.contentprojResolveAssemblyReference.cache
 C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGameContent\obj\x86\Debug\JLE_XNA_TestGameContent.contentprojResolveAssemblyReference.cache
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGameContent\obj\x86\Debug\JLE_XNA_TestGameContent.contentprojResolveAssemblyReference.cache
