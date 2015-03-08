@@ -29,7 +29,8 @@ namespace JLE_XNA_TestGame
         {
             Menu,
             Game,
-            Won
+            Won,
+            Lost
             // More gamestates might be added later on.
         }
 
@@ -204,6 +205,13 @@ namespace JLE_XNA_TestGame
 
                         }
                     }
+                    if (mBirdEnemy.getVisible())
+                    {
+                        if (Enumerable.Range(mBirdEnemy.getXCoord(), mBirdEnemy.getXCoord() + 47).Contains(mScout.getXCoord() + 47) && Enumerable.Range(mBirdEnemy.getYCoord(), mBirdEnemy.getYCoord() + 47).Contains(mScout.getYCoord()+47))
+                        {
+                            gameState = GameState.Lost;
+                        }
+                    }
                 }
                 catch (ArgumentOutOfRangeException)
                 {
@@ -302,6 +310,13 @@ namespace JLE_XNA_TestGame
                 }
 
             }
+            if (gameState == GameState.Lost || gameState == GameState.Won)
+            {
+                if (InpMa.mouseButtonPressed(Mouse.GetState().LeftButton))
+                {
+                    LoadContent();
+                }
+            }
                 if (gameTime.TotalGameTime.TotalSeconds > timetick)
                 {
                     // Set the next tick.
@@ -373,6 +388,16 @@ namespace JLE_XNA_TestGame
             {
                 mSpriteBatch.Begin();
                 mSpriteBatch.DrawString(mTitleFont, "You won!", new Vector2(50, titleSafe.Height / 3), Color.Black);
+                mSpriteBatch.DrawString(mNormalFont, "Press 'R' or left-click to restart, press 'Escape' to quit", new Vector2(5, titleSafe.Height - 30), Color.White);
+                mSpriteBatch.End();
+            }
+
+            if (gameState == GameState.Lost)
+            {
+                mSpriteBatch.Begin();
+                mSpriteBatch.DrawString(mTitleFont, "You lost!", new Vector2(50, titleSafe.Height / 3), Color.Black);
+                mSpriteBatch.DrawString(mNormalFont, "Your score was: " + pointsScored, new Vector2(titleSafe.Width/4, titleSafe.Height - 200), Color.White);
+                mSpriteBatch.DrawString(mNormalFont, "Press 'R' or left-click to restart, press 'Escape' to quit", new Vector2(5, titleSafe.Height - 30), Color.White);
                 mSpriteBatch.End();
             }
         }

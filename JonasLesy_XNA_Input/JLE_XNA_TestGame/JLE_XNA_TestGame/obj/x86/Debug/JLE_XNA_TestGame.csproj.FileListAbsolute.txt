@@ -39,3 +39,20 @@ C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input
 C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\birdEnemyRight.xnb
 C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\NormalFont.xnb
 C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\TitleFont.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\pac-man.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\ManSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\BirdSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\CharacterSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Bullet.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\birdEnemyLeft.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\birdEnemyRight.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\NormalFont.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\TitleFont.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.dll
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.pdb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.pdb
