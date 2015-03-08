@@ -24,18 +24,17 @@ namespace JLE_XNA_TestGame
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
-        // I use the following GameState enum to check whether the game has started or not.
+        // I use the following mGameState enum to check whether the game has started or not.
         public enum GameState
         {
             Menu,
             Game,
             Won,
             Lost
-            // More gamestates might be added later on.
         }
 
-        // Make a global variable of the GameState enum.
-        GameState gameState;
+        // Make a global variable of the mGameState enum.
+        GameState mGameState;
 
         // Singleton object for handling XNA graphics routines.
         GraphicsManager GraMa = GraphicsManager.Instance;
@@ -53,7 +52,7 @@ namespace JLE_XNA_TestGame
         Projectile mBullet;
 
         // A variable to keep the score.
-        private int pointsScored;
+        private int mPointsScored;
 
         // The spritebatch to draw.
         SpriteBatch mSpriteBatch;
@@ -63,7 +62,7 @@ namespace JLE_XNA_TestGame
         private SpriteFont mNormalFont;
 
         // Save the safe dimensions for the screen.
-        private Rectangle titleSafe;
+        private Rectangle mTitleSafe;
 
         // Sprite and animator for the bird enemy.
         private Texture2D mBirdSpriteTexture;
@@ -94,8 +93,8 @@ namespace JLE_XNA_TestGame
             // Initialize the graphics manager
             GraMa.InitializeContent();
 
-            // Initialize the gameState
-            //gameState = GameState.Menu;
+            // Initialize the mGameState
+            //mGameState = mGameState.Menu;
 
             base.Initialize();
         }
@@ -106,11 +105,11 @@ namespace JLE_XNA_TestGame
         /// </summary>
         protected override void LoadContent()
         {
-            // Set the score to 0.
-            pointsScored = 0;
+            // (re)set the score to 0.
+            mPointsScored = 0;
 
-            // Set the gamestate to 'menu'
-            gameState = GameState.Menu;
+            // Set the mGameState to 'menu'
+            mGameState = GameState.Menu;
 
             // Initialize the playable character, the enemy and the projectiles.
             mScout = new Character((GraMa.GetTitleSafeArea().Height - 100), GraMa.GetTitleSafeArea().Width / 2, 2, 2, 2);
@@ -121,21 +120,21 @@ namespace JLE_XNA_TestGame
             mCharacterSpriteTexture = Content.Load<Texture2D>("Images/CharacterSprite");
             mBulletSpriteTexture = Content.Load<Texture2D>("Images/Bullet");
 
-            // Load character texture.
+            // Load character texture and set its coordinates.
             mScout.setTexture(Content.Load<Texture2D>("Images/CharacterSprite"));
             mScout.setYCoordinate(mScout.getYCoord());
             mScout.setXCoordinate(mScout.getXCoord());
 
-            // Load the bullet texture.
+            // Load the bullet texture and set the Y coordinate, X coordinate is set later (during the game).
             mBullet.setTexture(Content.Load<Texture2D>("Images/Bullet"));
             mBullet.setYCoord(mScout.getYCoord());
 
-            // Load the bird texture.
+            // Load the bird texture and set its coordinates.
             mBirdEnemy.setTexture(Content.Load<Texture2D>("Images/birdEnemyLeft"));
             mBirdEnemy.setYCoordinate(mBirdEnemy.getYCoord());
             mBirdEnemy.setXCoordinate(mBirdEnemy.getXCoord());
 
-            // Create and initialize the sprite.
+            // Create and initialize the sprite and its animator.
             mBirdAnimator = new SpriteAnimator();
             mBirdAnimator.InitializeSprite(3, 2, 60, 49, 2);
             mBirdSpriteTexture = Content.Load<Texture2D>("Images/birdEnemyLeft");
@@ -148,7 +147,7 @@ namespace JLE_XNA_TestGame
             mNormalFont = Content.Load<SpriteFont>("NormalFont");
 
             // Set the same dimensions to those from the GraphicalManager.
-            titleSafe = GraMa.GetTitleSafeArea();
+            mTitleSafe = GraMa.GetTitleSafeArea();
         }
 
         /// <summary>
@@ -166,68 +165,80 @@ namespace JLE_XNA_TestGame
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            // Input the input manager (check old and new states).
             InpMa.Update();
 
+            // The game can be shut down at any moment by pressing 'Escape'.
             if (InpMa.keyboardButtonPressed(Keys.Escape))
             {
                 this.Exit();
             }
 
+            // If the 'R' key is pressed at any time during the game, the game will reset (by reloading the content).
             if (InpMa.keyboardButtonPressed(Keys.R))
             {
                 LoadContent();
             }
 
-            if (gameState == GameState.Menu)
+            // If the mGameState is 'Menu' then ..
+            if (mGameState == GameState.Menu)
             {
+                // Check if the Enter key is pressed, if so, the game will start (mGameState will be put to 'Game').
                 if (InpMa.keyboardButtonPressed(Keys.Enter))
                 {
-                    gameState = GameState.Game;
+                    mGameState = GameState.Game;
                 }
             }
 
-            if (gameState == GameState.Game)
+            // If the mGameState is 'Game' then ..
+            if (mGameState == GameState.Game)
             {
-                try
+                // If the bird is on-screen then..
+                if (mBirdEnemy.getVisible())
                 {
-                    if (mBullet.getVisible() && mBirdEnemy.getVisible())
+                    // If the bird touches the player then..
+                    if (Enumerable.Range(mBirdEnemy.getXCoord(), mBirdEnemy.getXCoord() + 47).Contains(mScout.getXCoord() + 47))
                     {
+                        // GAME OVER, The mGameState is set to 'Lost'.
+                        mGameState = GameState.Lost;
+                    }
+
+                    // If a bullet is fired then..
+                    if (mBullet.getVisible())
+                    {
+                        // If the bullet touched the bird ...
                         if (Enumerable.Range(mBirdEnemy.getXCoord(), mBirdEnemy.getXCoord() + 47).Contains(mBullet.getXCoord()))
                         {
+                            // The bird is set to visible as if it's been 'killed'.
                             mBirdEnemy.setVisible(false);
+                            // Also the bullet disappears.
                             mBullet.setVisible(false);
-                            pointsScored++;
+                            // The scorecounter is increased.
+                            mPointsScored++;
 
-                            if (pointsScored == 5 || pointsScored == 10)
+                            // If the player reaches a specific score then..
+                            if (mPointsScored == 5 || mPointsScored == 10)
                             {
+                                // The speed of the bird will be increased by 2.
                                 mBirdEnemy.increaseSpeed(2);
                             }
 
                         }
                     }
-                    if (mBirdEnemy.getVisible())
-                    {
-                        if (Enumerable.Range(mBirdEnemy.getXCoord(), mBirdEnemy.getXCoord() + 47).Contains(mScout.getXCoord() + 47) && Enumerable.Range(mBirdEnemy.getYCoord(), mBirdEnemy.getYCoord() + 47).Contains(mScout.getYCoord()+47))
-                        {
-                            gameState = GameState.Lost;
-                        }
-                    }
-                }
-                catch (ArgumentOutOfRangeException)
-                {
                 }
 
-
+                // If the bird is not visible then..
                 if (!mBirdEnemy.getVisible())
                 {
+                    // Initialize the bird again (reset-like actions are done).
                     mBirdEnemy = new Character((GraMa.GetTitleSafeArea().Height - 90), GraMa.GetTitleSafeArea().Width, 2, mBirdEnemy.getMoveLeft(), mBirdEnemy.getMoveRight());
                     mBirdEnemy.setXCoordinate(mBirdEnemy.getXCoord());
                     mBirdEnemy.setYCoordinate(mBirdEnemy.getYCoord());
                     mBirdEnemy.setTexture(Content.Load<Texture2D>("Images/birdEnemyLeft"));
-                    mBirdSpriteTexture = Content.Load<Texture2D>("Images/birdEnemyLeft");
                     mBirdEnemy.setVisible(true);
                 }
 
+                // Animate the sprite every timetick.
                 if (gameTime.TotalGameTime.TotalSeconds > timetick)
                 {
                     // Set the next tick.
@@ -240,35 +251,41 @@ namespace JLE_XNA_TestGame
                     base.Update(gameTime);
                 }
 
+                // Move the bird to the right with it's MOVE_LEFT parameter.
                 mBirdEnemy.decreaseXCoordinate(mBirdEnemy.getMoveLeft());
-                
-                
-                //if (mScout.getYCoord() > (titleSafe.Height-mScout.ObjectTexture.Height-10))
-                //{
-                //    //mScout.decreaseYCoordinate(5);
-                //    mScout.setYCoordinate(mScout.getStartY());
-                //}
 
+                // If the player pushed down the 'Right' key on the keyboard then..
                 if (InpMa.keyboardButtonDown(Keys.Right))
                 {
-                    if (mScout.getXCoord() < (titleSafe.Width - mScout.ObjectTexture.Width / 2))
+                    // If the character hasn't reached the right border of the screen.
+                    if (mScout.getXCoord() < (mTitleSafe.Width - mScout.ObjectTexture.Width / 2))
                     {
+                        // Move the character with its MOVE_RIGHT variable.
                         mScout.increaseXCoordinate(mScout.getMoveRight());
+                        // Flip the character sprite so the character is facing right.
                         mScout.setXSpriteCoord(0);
+                        // Flip the bullet sprite so it is facing right.
                         mBullet.setXSpriteCoord(0);
                     }
                 }
 
+                // If the player pushed down the 'Left' key on the keyboard then..
                 if (InpMa.keyboardButtonDown(Keys.Left))
                 {
+                    // If the character hasn't reached the left border of the screen.
                     if (mScout.getXCoord() > 0)
                     {
+                        // Move the character with its MOVE_LEFT variable.
                         mScout.decreaseXCoordinate(mScout.getMoveLeft());
+                        // Flip the character sprite so the character is facing left.
                         mScout.setXSpriteCoord(80);
+                        // Flip the bullet sprite so it is facing left.
                         mBullet.setXSpriteCoord(35);
                     }
                 }
 
+                // The next two checks are commented out because I want to implement some kind of jumping mechanism.
+                // This will probably be done during the next module!
                 //if (InpMa.keyboardButtonDown(Keys.Up))
                 //{
                 //    if (mScout.getYCoord() > 0)
@@ -279,53 +296,72 @@ namespace JLE_XNA_TestGame
 
                 //if (InpMa.keyboardButtonDown(Keys.Down))
                 //{
-                //    if (mScout.getYCoord() < (titleSafe.Height - mScout.ObjectTexture.Height))
+                //    if (mScout.getYCoord() < (mTitleSafe.Height - mScout.ObjectTexture.Height))
                 //    {
+                          // For now this uses a pre-defined value (2) because it'll have to be changed into some sort of gravity system.
+                          // I'll change this later.
                 //        mScout.decreaseYCoordinate(2);
                 //    }
                 //}
 
+                // If the player presses the 'Space' key on his keyboard or left-clicks with his mouse then..
                 if (InpMa.keyboardButtonPressed(Keys.Space) || InpMa.mouseButtonPressed(Mouse.GetState().LeftButton))
                 {
+                    // If the bullet is not yet visible then.. (this makes only one bullet possible at a time!)
                     if (!mBullet.getVisible())
                     {
+                        // Make the bullet visible.
                         mBullet.setVisible(true);
+                        // If the character is facing right then..
                         if (mScout.getXSpriteCoord() == 0)
                         {
+                            // Set the bullet's direction to right.
                             mBullet.setDirection(true);
+                            // Set the bullet's position to the right place.
                             mBullet.setXCoord(mScout.Dimensions.X + 80);
                             mBullet.setYCoord(mScout.Dimensions.Y + 14);
                         }
+                        // Otherwise, the character will be facing left, then..
                         else
                         {
+                            // Set the bullet's direction to left.
                             mBullet.setDirection(false);
+                            // Set the bullet's position to the right place.
                             mBullet.setXCoord(mScout.Dimensions.X - 30);
                             mBullet.setYCoord(mScout.Dimensions.Y + 14);
                         }
                     }
                 }
-                if(pointsScored == 15)
+
+                // Check if the player has score 15 points, then..
+                if (mPointsScored == 15)
                 {
-                    gameState = GameState.Won;
+                    // GAME WON, the mGameState is changed to 'Won'.
+                    mGameState = GameState.Won;
                 }
 
             }
-            if (gameState == GameState.Lost || gameState == GameState.Won)
+
+            // If the game is in the 'Lost' or 'Won' state then..
+            if (mGameState == GameState.Lost || mGameState == GameState.Won)
             {
+                // Check if the left-mousebutton is clicked, then..
                 if (InpMa.mouseButtonPressed(Mouse.GetState().LeftButton))
                 {
+                    // 'Reload' the game by loading the content.
                     LoadContent();
                 }
             }
-                if (gameTime.TotalGameTime.TotalSeconds > timetick)
-                {
-                    // Set the next tick.
-                    timetick += timestep;
 
-                    //Update the game.
-                    base.Update(gameTime);
-                }
-            
+            if (gameTime.TotalGameTime.TotalSeconds > timetick)
+            {
+                // Set the next tick.
+                timetick += timestep;
+
+                //Update the game.
+                base.Update(gameTime);
+            }
+
         }
 
         /// <summary>
@@ -337,67 +373,87 @@ namespace JLE_XNA_TestGame
             // Clear the screen and set the color to blue.
             GraMa.ClearScreen(Color.RoyalBlue);
 
-            // If the player is in the Menu gamestate
-            if (gameState == GameState.Menu)
+            // If the player is in the 'Menu' mGameState then..
+            if (mGameState == GameState.Menu)
             {
+                // Display the Menuscreen.
                 mSpriteBatch.Begin();
-                mSpriteBatch.DrawString(mTitleFont, "XNA SHOOTER", new Vector2(50, titleSafe.Height / 3), Color.Black);
-                mSpriteBatch.DrawString(mNormalFont, "Press ENTER to start playing!", new Vector2(titleSafe.Width / 2 - 200, titleSafe.Height / 2 + 40), Color.White);
-                mSpriteBatch.DrawString(mNormalFont, "Game controls:\n---------------\nLeft/Right: according keyboard buttons\nShoot: Space or Left-click\nReset: R-key\nQuit:  Escape-key", new Vector2(5, titleSafe.Height - 150), Color.Black);
-                mSpriteBatch.DrawString(mNormalFont, "By Jonas Lesy", new Vector2(titleSafe.Width - 150, titleSafe.Height - 30), Color.Black);
+                mSpriteBatch.DrawString(mTitleFont, "XNA SHOOTER", new Vector2(50, mTitleSafe.Height / 3), Color.Black);
+                mSpriteBatch.DrawString(mNormalFont, "Press ENTER to start playing!", new Vector2(mTitleSafe.Width / 2 - 200, mTitleSafe.Height / 2 + 40), Color.White);
+                mSpriteBatch.DrawString(mNormalFont, "Game controls:\n---------------\nLeft/Right: according keyboard buttons\nShoot: Space or Left-click\nReset: R-key\nQuit:  Escape-key", new Vector2(5, mTitleSafe.Height - 150), Color.Black);
+                mSpriteBatch.DrawString(mNormalFont, "By Jonas Lesy", new Vector2(mTitleSafe.Width - 150, mTitleSafe.Height - 30), Color.Black);
                 mSpriteBatch.End();
             }
 
-            if (gameState == GameState.Game)
+            // If the player is in the 'Game' mGameState then..
+            if (mGameState == GameState.Game)
             {
                 // Start the SpriteBatch
                 mSpriteBatch.Begin();
 
-                mSpriteBatch.DrawString(mNormalFont, "Score: " + pointsScored, new Vector2(10, 0), Color.Black);
+                // Display the score in the top-left corner of the screen.
+                mSpriteBatch.DrawString(mNormalFont, "Score: " + mPointsScored, new Vector2(10, 0), Color.Black);
 
+                // If the bird is visible then..
                 if (mBirdEnemy.getVisible())
                 {
+                    // Draw the correct part of the birdsprite and place it in the appropriate position.
                     mSpriteBatch.Draw(mBirdEnemy.ObjectTexture, new Rectangle(mBirdEnemy.getXCoord(), mBirdEnemy.getYCoord(), 60, 49), new Rectangle(mBirdAnimator.getXCoord(), mBirdAnimator.getYCoord(), 60, 49), Color.White);
                 }
 
+                // Draw the correct part of the scoutsprite (facing left or right) and place it in the appropriate position.
                 mSpriteBatch.Draw(mScout.ObjectTexture, new Rectangle(mScout.getXCoord(), mScout.getYCoord(), 80, 102), new Rectangle(mScout.getXSpriteCoord(), 0, 80, 102), Color.White);
+                
+                // If the bullet is visible then..
                 if (mBullet.getVisible())
                 {
+                    // Draw the correct part of the bulletsprite (facing left or right) and place it in the appropriate position.
                     mSpriteBatch.Draw(mBullet.ObjectTexture, new Rectangle(mBullet.Dimensions.X, mBullet.Dimensions.Y, 35, 12), new Rectangle(mBullet.getXSpriteCoord(), 0, 35, 12), Color.White);
+                    
+                    // If the bullet is facing right then..
                     if (mBullet.getDirection())
                     {
-                        mBullet.setXCoord(mBullet.Dimensions.X + 5);
+                        // Increase the coordinate of the bullet.
+                        mBullet.increaseXCoordinate(5);
                     }
+
+                    // Otherwise..
                     else
                     {
-                        mBullet.setXCoord(mBullet.Dimensions.X - 5);
+                        // Decrease the coordinate of the bullet by 5.
+                        mBullet.decreaseXCoordinate(5);
                     }
                 }
+
+                // If the bullet reaches one of the corners of the screen, then..
                 if (mBullet.Dimensions.X < -35 || mBullet.Dimensions.X > GraMa.GetTitleSafeArea().Width)
                 {
+                    // Make the bullet disappear.
                     mBullet.setVisible(false);
                 }
 
                 mSpriteBatch.End();
-                //GraMa.DrawPS(mCharacterSpriteTexture, new Rectangle(mScout.Dimensions.X, mScout.Dimensions.Y, mPacSpriteTexture.Width / 15, mPacSpriteTexture.Height / 15));
-
                 base.Draw(gameTime);
             }
 
-            if (gameState == GameState.Won)
+            // If the player is in the 'Won' mGameState then..
+            if (mGameState == GameState.Won)
             {
+                // Display the 'You won' screen.
                 mSpriteBatch.Begin();
-                mSpriteBatch.DrawString(mTitleFont, "You won!", new Vector2(50, titleSafe.Height / 3), Color.Black);
-                mSpriteBatch.DrawString(mNormalFont, "Press 'R' or left-click to restart, press 'Escape' to quit", new Vector2(5, titleSafe.Height - 30), Color.White);
+                mSpriteBatch.DrawString(mTitleFont, "You won!", new Vector2(50, mTitleSafe.Height / 3), Color.Black);
+                mSpriteBatch.DrawString(mNormalFont, "Press 'R' or left-click to restart, press 'Escape' to quit", new Vector2(5, mTitleSafe.Height - 30), Color.White);
                 mSpriteBatch.End();
             }
 
-            if (gameState == GameState.Lost)
+            // If the player is in the 'Lost' mGameState then..
+            if (mGameState == GameState.Lost)
             {
+                // Display the 'You lost' screen with the score.
                 mSpriteBatch.Begin();
-                mSpriteBatch.DrawString(mTitleFont, "You lost!", new Vector2(50, titleSafe.Height / 3), Color.Black);
-                mSpriteBatch.DrawString(mNormalFont, "Your score was: " + pointsScored, new Vector2(titleSafe.Width/4, titleSafe.Height - 200), Color.White);
-                mSpriteBatch.DrawString(mNormalFont, "Press 'R' or left-click to restart, press 'Escape' to quit", new Vector2(5, titleSafe.Height - 30), Color.White);
+                mSpriteBatch.DrawString(mTitleFont, "You lost!", new Vector2(50, mTitleSafe.Height / 3), Color.Black);
+                mSpriteBatch.DrawString(mNormalFont, "Your score was: " + mPointsScored, new Vector2(mTitleSafe.Width / 4, mTitleSafe.Height - 200), Color.White);
+                mSpriteBatch.DrawString(mNormalFont, "Press 'R' or left-click to restart, press 'Escape' to quit", new Vector2(5, mTitleSafe.Height - 30), Color.White);
                 mSpriteBatch.End();
             }
         }
