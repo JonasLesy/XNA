@@ -5,7 +5,7 @@ using System.Linq;
 
 // XNA includes.
 using Microsoft.Xna.Framework;
-//using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Audio;
 //using Microsoft.Xna.Framework.Content;
 //using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
@@ -42,6 +42,17 @@ namespace JLE_XNA_TestGame
         // Singleton object for handling XNA input routines.
         InputManager InpMa = InputManager.Instance;
 
+        // Singleton object for handling XNA sound routines.
+        SoundManager SouMa = SoundManager.Instance;
+
+        // Sound effect to be played.
+        cSound mShootEffect;
+        cSound mWinEffect;
+        cSound mLoseEffect;
+
+        // Game music to be played.
+        cSound mSong;
+
         // Texture to draw the 2D image.
         Texture2D mCharacterSpriteTexture;
         Texture2D mBulletSpriteTexture;
@@ -74,9 +85,10 @@ namespace JLE_XNA_TestGame
 
         public Game1()
         {
-            // Call the initialize function of the graphics and input manager.
-            GraMa.Initialize(this);
+            // Call the initialize function of the graphics, input and sound manager.
+            GraMa.initialize(this);
             InpMa.initialize(this);
+            SouMa.initialize(this);
 
             // Set up content directory for the game.
             Content.RootDirectory = "Content";
@@ -92,9 +104,6 @@ namespace JLE_XNA_TestGame
         {
             // Initialize the graphics manager
             GraMa.InitializeContent();
-
-            // Initialize the mGameState
-            //mGameState = mGameState.Menu;
 
             base.Initialize();
         }
@@ -146,6 +155,14 @@ namespace JLE_XNA_TestGame
             // We load the fonts
             mTitleFont = Content.Load<SpriteFont>("TitleFont");
             mNormalFont = Content.Load<SpriteFont>("NormalFont");
+
+            // Create game sounds and load the corresponding assets.
+            mShootEffect = SouMa.mSoundFactory.Get(SoundType.SOUND_EFFECT);
+            mShootEffect.LoadContent(this, "Audio/Gunshot");
+            mWinEffect = SouMa.mSoundFactory.Get(SoundType.SOUND_EFFECT);
+            mWinEffect.LoadContent(this, "Audio/WinApplause");
+            mLoseEffect = SouMa.mSoundFactory.Get(SoundType.SOUND_EFFECT);
+            mLoseEffect.LoadContent(this, "Audio/GameOver");
 
             // Set the same dimensions to those from the GraphicalManager.
             mTitleSafe = GraMa.GetTitleSafeArea();
@@ -202,6 +219,9 @@ namespace JLE_XNA_TestGame
                     {
                         // GAME OVER, The mGameState is set to 'Lost'.
                         mGameState = GameState.Lost;
+
+                        // Play the Game Over sound effect.
+                        mLoseEffect.play();
                     }
 
                     // If a bullet is fired then..
@@ -311,6 +331,7 @@ namespace JLE_XNA_TestGame
                     // If the bullet is not yet visible then.. (this makes only one bullet possible at a time!)
                     if (!mBullet.getVisible())
                     {
+                        mShootEffect.play();
                         // Make the bullet visible.
                         mBullet.setVisible(true);
                         // If the character is facing right then..
@@ -339,6 +360,9 @@ namespace JLE_XNA_TestGame
                 {
                     // GAME WON, the mGameState is changed to 'Won'.
                     mGameState = GameState.Won;
+
+                    // Play the applause sound effect.
+                    mWinEffect.play();
                 }
 
             }

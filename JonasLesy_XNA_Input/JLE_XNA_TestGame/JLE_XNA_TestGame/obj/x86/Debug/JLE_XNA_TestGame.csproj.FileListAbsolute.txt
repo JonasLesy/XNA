@@ -41,7 +41,6 @@ C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input
 C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\pac-man.xnb
 C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\ManSprite.xnb
 C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\BirdSprite.xnb
-C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\CharacterSprite.xnb
 C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Bullet.xnb
 C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\birdEnemyLeft.xnb
 C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\NormalFont.xnb
@@ -70,3 +69,7 @@ C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x8
 C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.exe
 C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\Gunshot.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\CharacterSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\WinApplause.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\GameOver.xnb

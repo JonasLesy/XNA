@@ -52,7 +52,7 @@ namespace JLE_XNA_GameEngine
         }
 
         // Initialize the game
-        public void Initialize(Game pGame)
+        public void initialize(Game pGame)
         {
             mGame = pGame;
             mGraphics = new GraphicsDeviceManager(mGame);

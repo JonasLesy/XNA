@@ -29,22 +29,13 @@
       <Time>2015-02-18T17:49:20+02:00</Time>
     </Item>
     <Item>
-      <Source>Images\CharacterSprite.jpg</Source>
-      <Name>Images\CharacterSprite</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\CharacterSprite.xnb</Output>
-      <Time>2015-03-04T10:53:03+02:00</Time>
-    </Item>
-    <Item>
       <Source>Images\Bullet.png</Source>
       <Name>Images\Bullet</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Bullet.xnb</Output>
-      <Time>2015-03-02T17:36:46+02:00</Time>
+      <Time>2015-03-11T11:38:49.6017042+02:00</Time>
     </Item>
     <Item>
       <Source>Images\birdEnemyLeft.png</Source>
@@ -53,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\birdEnemyLeft.xnb</Output>
-      <Time>2015-03-04T11:44:06+02:00</Time>
+      <Time>2015-03-11T11:50:40.1900031+02:00</Time>
     </Item>
     <Item>
       <Source>NormalFont.spritefont</Source>
@@ -72,6 +63,42 @@
       <Options>None</Options>
       <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\TitleFont.xnb</Output>
       <Time>2015-03-07T15:11:49+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Gunshot.wav</Source>
+      <Name>Audio\Gunshot</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\Gunshot.xnb</Output>
+      <Time>2011-12-15T16:23:55.1875+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\CharacterSprite.png</Source>
+      <Name>Images\CharacterSprite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\CharacterSprite.xnb</Output>
+      <Time>2015-03-11T11:35:56.9147493+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\WinApplause.wav</Source>
+      <Name>Audio\WinApplause</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\WinApplause.xnb</Output>
+      <Time>2011-12-15T16:15:42.125+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameOver.wav</Source>
+      <Name>Audio\GameOver</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\GameOver.xnb</Output>
+      <Time>2011-12-15T16:16:47.71875+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
