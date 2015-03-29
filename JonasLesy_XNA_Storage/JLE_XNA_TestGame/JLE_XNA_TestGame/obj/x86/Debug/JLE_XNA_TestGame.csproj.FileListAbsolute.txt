@@ -1,0 +1,143 @@
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.dll
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.pdb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\pac-man.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\GameFont.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\ManSprite.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\2D Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\BirdSprite.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\pac-man.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\ManSprite.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\BirdSprite.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\GameFont.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.dll
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.pdb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_2D_XNA_Graphics\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\pac-man.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\ManSprite.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\BirdSprite.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.dll
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.pdb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\CharacterSprite.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Bullet.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\birdEnemyLeft.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\NormalFont.xnb
+C:\Users\Jonas\Dropbox\KATHO\Derde Jaar\FINLAND\XNA\Indienen\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\TitleFont.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\pac-man.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\ManSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\BirdSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Bullet.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\birdEnemyLeft.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\NormalFont.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\TitleFont.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.dll
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.pdb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\pac-man.xnb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\ManSprite.xnb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\BirdSprite.xnb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\CharacterSprite.xnb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Bullet.xnb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\birdEnemyLeft.xnb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\NormalFont.xnb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\TitleFont.xnb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.dll
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.pdb
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Desktop\Jonas_Lesy_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\Gunshot.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\CharacterSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\WinApplause.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\GameOver.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\StartscreenSong.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\LevelSong.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\StartscreenSong.wma
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\LevelSong.wma
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume0.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume1.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume2.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume3.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume4.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Input\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume5.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\pac-man.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\ManSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\BirdSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\CharacterSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\birdEnemyLeft.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Bullet.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume0.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume1.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume2.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume3.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume4.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume5.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\NormalFont.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\TitleFont.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\Gunshot.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\WinApplause.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\GameOver.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\StartscreenSong.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\LevelSong.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\StartscreenSong.wma
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\LevelSong.wma
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.dll
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.pdb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Sound\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\pac-man.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\ManSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\BirdSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\CharacterSprite.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\birdEnemyLeft.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Bullet.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume0.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume1.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume2.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume3.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume4.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Images\Volume5.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\NormalFont.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\TitleFont.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\Gunshot.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\WinApplause.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\GameOver.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\StartscreenSong.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\LevelSong.xnb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\StartscreenSong.wma
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\Content\Audio\LevelSong.wma
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_TestGame.pdb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.dll
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\bin\x86\Debug\JLE_XNA_GameEngine.pdb
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.exe
+C:\Users\Jonas\Documents\XNA\JonasLesy_XNA_Storage\JLE_XNA_TestGame\JLE_XNA_TestGame\obj\x86\Debug\JLE_XNA_TestGame.pdb
