@@ -45,6 +45,9 @@ namespace JLE_XNA_TestGame
         // Singleton object for handling XNA sound routines.
         SoundManager SouMa = SoundManager.Instance;
 
+        // Singleton object for handling XNA file routines.
+        FileManager FilMa = FileManager.Instance;
+
         // Sound effect to be played.
         cSound mShootEffect;
         cSound mWinEffect;
@@ -87,10 +90,11 @@ namespace JLE_XNA_TestGame
 
         public Game1()
         {
-            // Call the initialize function of the graphics, input and sound manager.
+            // Call the initialize function of the graphics, input, sound manager and file manager.
             GraMa.initialize(this);
             InpMa.initialize(this);
             SouMa.initialize(this);
+            FilMa.Initialize();
 
             // Set up content directory for the game.
             Content.RootDirectory = "Content";
@@ -193,6 +197,20 @@ namespace JLE_XNA_TestGame
         {
             // Input the input manager (check old and new states).
             InpMa.Update();
+
+            // If the 's' key is pressed, the game is saved.
+            if (InpMa.keyboardButtonPressed(Keys.S))
+            {
+                SaveGameData lGameDataToSave, lGameDataToLoad;
+
+                lGameDataToSave.AvatarPosition = new Vector2(15.0f, 15.0f);
+                lGameDataToSave.Level = 1;
+                lGameDataToSave.PlayerName = "Jonas Lesy";
+                lGameDataToSave.Score = 5;
+
+                FilMa.saveGame(lGameDataToSave, "mySaveFile");
+                lGameDataToLoad = FilMa.readGame("mySaveFile");
+            }
 
             // The game can be shut down at any moment by pressing 'Escape'.
             if (InpMa.keyboardButtonPressed(Keys.Escape))
