@@ -146,7 +146,7 @@ namespace JLE_XNA_GameEngine
         /// Function which reads the game data.
         /// </summary>
         /// <returns>Game data that was loaded.</returns>
-        public SaveGameData readGame(string saveGameName)
+        public SaveGameData readGame(String saveGameName)
         {
             // Create and initialize object into which the data is loaded.
             SaveGameData lData;
@@ -167,7 +167,7 @@ namespace JLE_XNA_GameEngine
             // Close the wait handle.
             lResult.AsyncWaitHandle.Close();
 
-            string lFilename = saveGameName;
+            String lFilename = saveGameName;
 
             // Open the save file.
             Stream lStream = lContainer.OpenFile(lFilename, FileMode.Open);
@@ -179,10 +179,41 @@ namespace JLE_XNA_GameEngine
             // Close the file.
             lStream.Close();
 
+
+
             // Dispose the storage container. This commits the changes.
             lContainer.Dispose();
 
             return lData;
+
+        }
+
+        public bool DoesFileExist(String pFileName)
+        {
+            IAsyncResult lResult =
+           mStorageDevice.BeginOpenContainer("JLE_XNA_TestGame", null, null);
+
+            // Wait for the WaitHandle to become signaled.
+            lResult.AsyncWaitHandle.WaitOne();
+
+            StorageContainer lContainer = mStorageDevice.EndOpenContainer(lResult);
+
+            // Close the wait handle.
+            lResult.AsyncWaitHandle.Close();
+
+            try
+            {
+                // Open the save file.
+                Stream lStream = lContainer.OpenFile(pFileName, FileMode.Open);
+
+                // Close the file.
+                lStream.Close();
+                return true;
+            }
+            catch (FileNotFoundException)
+            {
+                return false;
+            }
         }
     }
 }

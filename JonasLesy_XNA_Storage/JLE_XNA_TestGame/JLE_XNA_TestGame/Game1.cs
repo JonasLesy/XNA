@@ -28,6 +28,7 @@ namespace JLE_XNA_TestGame
         public enum GameState
         {
             Menu,
+            NameInsert,
             Game,
             Won,
             Lost
@@ -47,6 +48,9 @@ namespace JLE_XNA_TestGame
 
         // Singleton object for handling XNA file routines.
         FileManager FilMa = FileManager.Instance;
+
+        // String which holds the player's name
+        String mPlayerName = "";
 
         // Sound effect to be played.
         cSound mShootEffect;
@@ -69,6 +73,9 @@ namespace JLE_XNA_TestGame
 
         // A variable to keep the score.
         private int mPointsScored;
+
+        // A variable to keep the current level.
+        private int mCurrentLevel;
 
         // The spritebatch to draw.
         SpriteBatch mSpriteBatch;
@@ -120,8 +127,9 @@ namespace JLE_XNA_TestGame
         /// </summary>
         protected override void LoadContent()
         {
-            // (re)set the score to 0.
+            // (re)set the score and level to 0.
             mPointsScored = 0;
+            mCurrentLevel = 1;
 
             // Set the mGameState to 'menu'
             mGameState = GameState.Menu;
@@ -144,6 +152,7 @@ namespace JLE_XNA_TestGame
 
             // Load the bullet texture and set the Y coordinate, X coordinate is set later (during the game).
             mBullet.setTexture(Content.Load<Texture2D>("Images/Bullet"));
+            mBullet.setDirectionRight(true);
             mBullet.setYCoord(mScout.getYCoord());
 
             // Load the bird texture and set its coordinates.
@@ -204,12 +213,12 @@ namespace JLE_XNA_TestGame
                 SaveGameData lGameDataToSave, lGameDataToLoad;
 
                 lGameDataToSave.AvatarPosition = new Vector2(15.0f, 15.0f);
-                lGameDataToSave.Level = 1;
-                lGameDataToSave.PlayerName = "Jonas Lesy";
-                lGameDataToSave.Score = 5;
+                lGameDataToSave.Level = mCurrentLevel;
+                lGameDataToSave.PlayerName = mPlayerName;
+                lGameDataToSave.Score = mPointsScored;
 
-                FilMa.saveGame(lGameDataToSave, "mySaveFile");
-                lGameDataToLoad = FilMa.readGame("mySaveFile");
+                FilMa.saveGame(lGameDataToSave, mPlayerName);
+                lGameDataToLoad = FilMa.readGame(mPlayerName);
             }
 
             // The game can be shut down at any moment by pressing 'Escape'.
@@ -243,12 +252,74 @@ namespace JLE_XNA_TestGame
                 {
                     mStartScreenSong.play();
                 }
-                // Check if the Enter key is pressed, if so, the game will start (mGameState will be put to 'Game').
-                if (InpMa.keyboardButtonPressed(Keys.Enter))
+                // Check if the Enter key is released, if so, the player will be able to give his/her name (mGameState will be put to 'NameInsert').
+                if (InpMa.keyboardButtonReleased(Keys.Enter))
                 {
-                    mGameState = GameState.Game;
-                    mStartScreenSong.stop();
-                    mLevelSong.play();
+                    mGameState = GameState.NameInsert;
+                }
+            }
+
+            // If the mGameState is 'NameInsert' then ..
+            if (mGameState == GameState.NameInsert)
+            {
+                Array PressedKeys = Keyboard.GetState().GetPressedKeys();
+                // If the array is not empty, and thus a key is pressed.
+                if (PressedKeys.Length != 0)
+                {
+                    foreach (Keys key in PressedKeys)
+                    {
+                        if (InpMa.keyboardButtonPressed(key))
+                        {
+                            if (key == Keys.Enter)
+                            {
+                                // If the player has entered a name.
+                                if (mPlayerName.Length != 0)
+                                {
+                                    // If the file already exists, then it is loaded.
+                                    if (FilMa.DoesFileExist(mPlayerName))
+                                    {
+                                        SaveGameData lGameDataToLoad = FilMa.readGame(mPlayerName);
+                                        mPointsScored = lGameDataToLoad.Score;
+                                        mCurrentLevel = lGameDataToLoad.Level;
+                                    }
+                                    // Otherwise a new save file is created.
+                                    else
+                                    {
+                                        SaveGameData lGameDataToSave, lGameDataToLoad;
+
+                                        lGameDataToSave.AvatarPosition = new Vector2(15.0f, 15.0f);
+                                        lGameDataToSave.Level = 1;
+                                        lGameDataToSave.PlayerName = mPlayerName;
+                                        lGameDataToSave.Score = 0;
+
+                                        FilMa.saveGame(lGameDataToSave, mPlayerName);
+                                        lGameDataToLoad = FilMa.readGame(mPlayerName);
+                                    }
+                                    mGameState = GameState.Game;
+                                    mStartScreenSong.stop();
+                                    mLevelSong.play();
+                                }
+                            }
+                            else if (key == Keys.Back)
+                            {
+                                if (mPlayerName.Length >= 1)
+                                {
+                                    // If backspace is pressed, then the last character will we removed,
+                                    //but only if playername is minimal 1 character long.
+                                    mPlayerName = mPlayerName.Remove(mPlayerName.Length - 1, 1);
+                                }
+                            }
+                            else if(InpMa.IsKeyAChar(key))
+                            {
+                                // Only allow a maximum username length of 10 characters.
+                                if (mPlayerName.Length < 10)
+                                {
+                                    // Add the character of the key to the player name.
+                                    mPlayerName += key.ToString();
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -291,6 +362,9 @@ namespace JLE_XNA_TestGame
                             {
                                 // The speed of the bird will be increased by 2.
                                 mBirdEnemy.increaseSpeed(2);
+
+                                // The level will be elevated.
+                                mCurrentLevel++;
                             }
 
                         }
@@ -334,8 +408,6 @@ namespace JLE_XNA_TestGame
                         mScout.increaseXCoordinate(mScout.getMoveRight());
                         // Flip the character sprite so the character is facing right.
                         mScout.setXSpriteCoord(0);
-                        // Flip the bullet sprite so it is facing right.
-                        mBullet.setXSpriteCoord(0);
                     }
                 }
 
@@ -349,8 +421,6 @@ namespace JLE_XNA_TestGame
                         mScout.decreaseXCoordinate(mScout.getMoveLeft());
                         // Flip the character sprite so the character is facing left.
                         mScout.setXSpriteCoord(80);
-                        // Flip the bullet sprite so it is facing left.
-                        mBullet.setXSpriteCoord(35);
                     }
                 }
 
@@ -375,7 +445,7 @@ namespace JLE_XNA_TestGame
                 //}
 
                 // If the player presses the 'Space' key on his keyboard or left-clicks with his mouse then..
-                if (InpMa.keyboardButtonPressed(Keys.Space) || InpMa.mouseButtonPressed(Mouse.GetState().LeftButton) || InpMa.gamePadButtonPressed(GamePad.GetState(PlayerIndex.One).Buttons.A))
+                if (InpMa.keyboardButtonReleased(Keys.Space) || InpMa.mouseButtonPressed(Mouse.GetState().LeftButton)) //|| InpMa.gamePadButtonPressed(GamePad.GetState(PlayerIndex.One).Buttons.A))
                 {
                     // If the bullet is not yet visible then.. (this makes only one bullet possible at a time!)
                     if (!mBullet.getVisible())
@@ -387,19 +457,26 @@ namespace JLE_XNA_TestGame
                         if (mScout.getXSpriteCoord() == 0)
                         {
                             // Set the bullet's direction to right.
-                            mBullet.setDirection(true);
+                            mBullet.setDirectionRight(true);
                             // Set the bullet's position to the right place.
                             mBullet.setXCoord(mScout.Dimensions.X + 80);
                             mBullet.setYCoord(mScout.Dimensions.Y + 14);
+
+                            // Flip the bullet sprite so it is facing right.
+                            mBullet.setXSpriteCoord(0);
                         }
                         // Otherwise, the character will be facing left, then..
                         else
                         {
                             // Set the bullet's direction to left.
-                            mBullet.setDirection(false);
+                            mBullet.setDirectionRight(false);
                             // Set the bullet's position to the right place.
                             mBullet.setXCoord(mScout.Dimensions.X - 30);
                             mBullet.setYCoord(mScout.Dimensions.Y + 14);
+
+
+                            // Flip the bullet sprite so it is facing left.
+                            mBullet.setXSpriteCoord(35);
                         }
                     }
                 }
@@ -444,8 +521,29 @@ namespace JLE_XNA_TestGame
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            // Clear the screen and set the color to blue.
-            GraMa.ClearScreen(Color.RoyalBlue);
+            // Clear the screen and set the color according to the current level.
+            if (mGameState == GameState.Game)
+            {
+                switch (mCurrentLevel)
+                {
+                    case 1:
+                        GraMa.ClearScreen(Color.RoyalBlue);
+                        break;
+                    case 2:
+                        GraMa.ClearScreen(Color.LightSeaGreen);
+                        break;
+                    case 3:
+                        GraMa.ClearScreen(Color.Orange);
+                        break;
+                    default:
+                        GraMa.ClearScreen(Color.RoyalBlue);
+                        break;
+                }
+            }
+            else
+            {
+                GraMa.ClearScreen(Color.RoyalBlue);
+            }
 
             // I round the volume (float) to a decimal with only one digit after the comma. This is done to avoid 0.599999999...
             String decimalValue = (Math.Round((decimal)mStartScreenSong.getVolume(),1)).ToString();
@@ -494,14 +592,26 @@ namespace JLE_XNA_TestGame
                 mSpriteBatch.End();
             }
 
+            // If the player is in the 'NameInsert' mGameState then..
+            if (mGameState == GameState.NameInsert)
+            {
+                // Display the Menuscreen.
+                mSpriteBatch.Begin();
+                mSpriteBatch.DrawString(mTitleFont, "Insert name", new Vector2(50, mTitleSafe.Height / 4), Color.Black);
+                mSpriteBatch.DrawString(mNormalFont, mPlayerName, new Vector2(mTitleSafe.Width / 2 - 200, mTitleSafe.Height / 3 + 65), Color.White);
+                mSpriteBatch.End();
+            }
+
             // If the player is in the 'Game' mGameState then..
             if (mGameState == GameState.Game)
             {
                 // Start the SpriteBatch
                 mSpriteBatch.Begin();
 
-                // Display the score in the top-left corner of the screen.
+
+                // Display the score in the top-left corner of the screen and the player's name in the top center.
                 mSpriteBatch.DrawString(mNormalFont, "Score: " + mPointsScored, new Vector2(10, 0), Color.Black);
+                mSpriteBatch.DrawString(mNormalFont, mPlayerName, new Vector2(mTitleSafe.Width / 2, 0), Color.Black);
 
                 // If the bird is visible then..
                 if (mBirdEnemy.getVisible())
@@ -565,6 +675,11 @@ namespace JLE_XNA_TestGame
                 mSpriteBatch.DrawString(mNormalFont, "Press 'R' or left-click to restart, press 'Escape' to quit", new Vector2(5, mTitleSafe.Height - 30), Color.White);
                 mSpriteBatch.End();
             }
+        }
+
+        public void checkIfPlayerNameExists()
+        {
+
         }
     }
 }

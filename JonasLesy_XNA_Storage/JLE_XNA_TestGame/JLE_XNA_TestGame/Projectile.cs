@@ -20,7 +20,7 @@ namespace JLE_XNA_TestGame
         const int MOVE_LEFT = -3;
         const int MOVE_RIGHT = 3;
 
-        public void setDirection(bool newBool)
+        public void setDirectionRight(bool newBool)
         {
             projectileDirection = newBool;
         }

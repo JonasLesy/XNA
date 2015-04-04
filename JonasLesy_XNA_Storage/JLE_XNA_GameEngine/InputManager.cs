@@ -230,6 +230,16 @@ namespace JLE_XNA_GameEngine
         }
 
         /// <summary>
+        /// Checks if the given key is a letter or not.
+        /// </summary>
+        /// <param name="key">The key needed to be checked.</param>
+        /// <returns>Boolean, yes if the key is a character of the alfabet, no if not.</returns>
+        public bool IsKeyAChar(Keys key)
+        {
+            return key >= Keys.A && key <= Keys.Z;
+        }
+
+        /// <summary>
         /// Check whether a mouse button has been pressed.
         /// </summary>
         /// <param name="pButtonState">State of the mouse button in question.</param>
